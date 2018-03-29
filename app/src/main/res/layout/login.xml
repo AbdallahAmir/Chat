@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/bgg"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textSize="25sp"
+        android:layout_margin="30dp"
+        android:textColor="#ffc3c3c3"
+        android:layout_gravity="center_horizontal" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="50dp"
+        android:padding="20dp"
+        android:background="#0E582E">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="UserName"
+                    android:paddingLeft="10dp"
+                    android:textSize="15sp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:hint="Enter Your Name"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:layout_margin="10dp"
+                    android:id="@+id/user" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#07341B"
+            android:layout_gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/login"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Login"
+                android:layout_margin="25dp"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:onClick="onClick"
+                android:background="#25E288"
+                android:layout_gravity="center_horizontal" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#f00"
+            android:gravity="center" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
